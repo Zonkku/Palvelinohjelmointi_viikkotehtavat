@@ -1,0 +1,13 @@
+
+
+
+<table class="table table-striped">
+<tr>
+<th>Name</th>
+<th>Email</th>
+</tr>
+<tr th:each = "student : ${students}">
+<td th:text="${student.firstName} + ' ' + ${student.lastName}"></td>
+<td th:text="${student.email}"></td>
+</tr>
+</table>
